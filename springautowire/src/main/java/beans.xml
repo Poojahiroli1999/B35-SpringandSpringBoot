@@ -5,11 +5,14 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
 
-<!--comment-->
-<!---bean id="airtel" class="org.tnsif.springioc.Airtel"></bean>
-<bean id="jio" class="org.tnsif.springioc.Jio"></bean-->
+
 
 <!---beans-->
-<bean id="sim" class="org.tnsif.springioc.Airtel"></bean>
+
+<bean id="heart" class="org.tnsif.springautowire.Heart"/>
+<bean id="human" class="org.tnsif.springautowire.Human" autowire="byName"></bean>
+<!--bean id="human" class="org.tnsif.springautowire.Human" autowire="byType"></bean-->
+<!--bean id="human" class="org.tnsif.springautowire.Human" autowire="constructor"></bean-->
+
 
 </beans>
